@@ -19,7 +19,7 @@ vt_clone_location=vendor/xiaomi/violet
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=none			#none/installclean
+make_type=installclean			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
