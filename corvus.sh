@@ -19,7 +19,7 @@ vt_clone_location=vendor/xiaomi/violet
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=installclean			#none/installclean
+make_type=clean			#none/installclean/clean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
@@ -113,5 +113,10 @@ fi
 if [ "$make_type" == "installclean" ]
 then
   make installclean
+  make -j$(nproc --all) corvus
+fi
+if [ "$make_type" == "clean" ]
+then
+  make clean
   make -j$(nproc --all) corvus
 fi
