@@ -109,7 +109,9 @@ fi
 if [ "$make_type" == "none" ]
 then
   make -j$(nproc --all) corvus
-elif [ "$make_type" == "installclean" ]
+fi
+if [ "$make_type" == "installclean" ]
+then
   make installclean
   make -j$(nproc --all) corvus
 fi
