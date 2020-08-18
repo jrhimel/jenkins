@@ -19,7 +19,7 @@ vt_clone_location=vendor/xiaomi/violet
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
 make_type=none			#none/installclean
-
+timezone=Asia/Dhaka		#select which timezone you live :D
 
 
 #Do not touch below lines if you are using Apon77's jenkins.
@@ -38,6 +38,17 @@ export USE_CCACHE=1
 export CCACHE_DIR=$ccache_dir
 export CCACHE_EXEC=$(which ccache)
 export CCACHE_MAXSIZE=$max_ccache
+export TZ=$timezone
+
+if [ "$gapps_or_vanilla" == "gapps" ]
+then
+    export USE_GAPPS=true
+else
+    export USE_GAPPS=false
+fi
+
+
+
 
 #Clone dt,kt,vt(fetch & checkout to variable branch if already folder exists)
 
