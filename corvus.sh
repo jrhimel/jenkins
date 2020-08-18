@@ -19,7 +19,7 @@ vt_clone_location=vendor/xiaomi/violet
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=clean			#none/installclean/clean
+make_type=installclean			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
@@ -64,7 +64,7 @@ then
 else
     git clone $dt -b $dt_branch $dt_clone_location
 fi
-
+rm -rf kernel/realme/sm6150/        #Removed problematic kernel dir
 if [ -d "$kt_clone_location" ]
 then
     cd $kt_clone_location
@@ -90,7 +90,6 @@ else
 fi
 
 
-
 # Set up environment
 cd $rom_dir
 . build/envsetup.sh
@@ -113,10 +112,5 @@ fi
 if [ "$make_type" == "installclean" ]
 then
   make installclean
-  make -j$(nproc --all) corvus
-fi
-if [ "$make_type" == "clean" ]
-then
-  make clean
   make -j$(nproc --all) corvus
 fi
