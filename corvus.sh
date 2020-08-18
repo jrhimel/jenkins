@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Variables for device (Edit according to your choices)
+trigger_no=1
 device=violet 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
