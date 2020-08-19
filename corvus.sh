@@ -2,20 +2,20 @@
 
 #Variables for device (Edit according to your choices)
 trigger_no=1
-device=mido 			#For which device want to build
+device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/Apon77/corvus_working.git
-dt_branch=jenkins 		#Dt branch to use for build
-dt_clone_location=device/xiaomi/mido
+dt=https://https://github.com/jrhimel/corvus.git
+dt_branch=10 		#Dt branch to use for build
+dt_clone_location=device/xiaomi/santoni
 
-kt=https://github.com/Apon77/corvus_working_kernel.git
-kt_branch=jenkins 		#Kernel branch to use for build
-kt_clone_location=kernel/xiaomi/mido
+kt=https://https://github.com/jrhimel/viper-kernel.git
+kt_branch=master 		#Kernel branch to use for build
+kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/Apon77/corvus_working_vendor.git
-vt_branch=jenkins		#Vendor branch to use for build
-vt_clone_location=vendor/xiaomi/
+vt=https://https://github.com/jrhimel/vendor_santoni_new.git
+vt_branch=quartz		#Vendor branch to use for build
+vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
