@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Variables (Change according to your choice)
+device=mido                     #Local folder name from where script will run
+git_clone_url=https://github.com/Apon77/jenkins   #Where script exists in github
+branch=jenkins                  #In which branch build script exists
+script_name=corvus.sh           #Name of build script
+
+
+
+#No need to touch below lines.
+mkdir -p ~/scripts
+cd ~/scripts
+build_date=$(date +%Y%m%d%H%M%S)
+git clone $git_clone_url -b $branch ~/scripts/$device/$build_date
+source ~/scripts/$device/$build_date/$script_name
