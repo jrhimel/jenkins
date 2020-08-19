@@ -5,16 +5,16 @@ trigger_no=1
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/corvus.git
-dt_branch=10 		#Dt branch to use for build
+dt=https://github.com/jrhimel/rr10.git
+dt_branch=Q 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
 kt=https://github.com/jrhimel/viper-kernel.git
 kt_branch=master 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/vendor_santoni_new.git
-vt_branch=quartz		#Vendor branch to use for build
+vt=https://github.com/jrhimel/Pixel-vendor.git
+vt_branch=ten		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
@@ -24,8 +24,8 @@ timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
 #Do not touch below lines if you are using Apon77's jenkins.
-rom_dir=~/corvus		#Space is not allowed(~ is home directory)
-ccache_dir=~/corvus_ccache/$device 	#Space is not allowed
+rom_dir=~/rr		#Space is not allowed(~ is home directory)
+ccache_dir=~/rr_ccache/$device 	#Space is not allowed
 max_ccache=30G			 #30G is enough for  one divice
 
 
@@ -33,8 +33,8 @@ max_ccache=30G			 #30G is enough for  one divice
 #Enough, no more variable except repo init url. So, no need to touch.
 mkdir -p $rom_dir 		#Creates rom folder if not exists
 cd $rom_dir			#Enters into rom folder
-repo init -u https://github.com/Corvus-ROM/android_manifest.git -b 10
-repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
+repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b Q
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 export USE_CCACHE=1
 export CCACHE_DIR=$ccache_dir
 export CCACHE_EXEC=$(which ccache)
@@ -103,19 +103,19 @@ cd $rom_dir
 # Choose a target and lunch
 if [ "$lunch_or_brunch" == "brunch" ]
 then
-    brunch du_$device-$variant
+    brunch rr_$device-$variant
 else
-    lunch du_$device-$variant
+    lunch rr_$device-$variant
 fi
 
 
 # Build the ROM
 if [ "$make_type" == "none" ]
 then
-  make -j$(nproc --all) corvus
+  make -j$(nproc --all) bacon
 fi
 if [ "$make_type" == "installclean" ]
 then
   make installclean
-  make -j$(nproc --all) corvus
+  make -j$(nproc --all) bacon
 fi
