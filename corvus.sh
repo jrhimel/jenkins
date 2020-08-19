@@ -21,8 +21,6 @@ gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
 make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
-rm -rf kernel/realme/sm6150/    #Removed problematic kernel dir
-rm -rf kernel/xiaomi/sm6150/	#Removed problematic kernel dir 2
 
 
 #Do not touch below lines if you are using Apon77's jenkins.
@@ -50,6 +48,10 @@ else
     export USE_GAPPS=false
 fi
 
+
+#Removed problematic existing kernel dirs
+rm -rf kernel/realme/sm6150
+rm -rf kernel/xiaomi/sm6150
 
 
 
