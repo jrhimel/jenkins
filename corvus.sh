@@ -9,11 +9,11 @@ dt=https://github.com/jrhimel/corvus.git
 dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
-kt=https://https://github.com/jrhimel/viper-kernel.git
+kt=https://github.com/jrhimel/viper-kernel.git
 kt_branch=master 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://https://github.com/jrhimel/vendor_santoni_new.git
+vt=https://github.com/jrhimel/vendor_santoni_new.git
 vt_branch=quartz		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
