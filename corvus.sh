@@ -5,7 +5,7 @@ trigger_no=1
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://https://github.com/jrhimel/corvus.git
+dt=https://github.com/jrhimel/corvus.git
 dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
