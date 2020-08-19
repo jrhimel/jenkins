@@ -21,7 +21,7 @@ gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
 make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
-
+rm -rf kernel/realme/sm6150/    #Removed problematic kernel dir
 
 #Do not touch below lines if you are using Apon77's jenkins.
 rom_dir=~/corvus		#Space is not allowed(~ is home directory)
