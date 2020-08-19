@@ -2,24 +2,24 @@
 
 #Variables for device (Edit according to your choices)
 trigger_no=1
-device=violet 			#For which device want to build
+device=mido 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/CorvusRom-Devices/device_xiaomi_violet.git
-dt_branch=10 			#Dt branch to use for build
-dt_clone_location=device/xiaomi/violet
+dt=https://github.com/Apon77/corvus_working.git
+dt_branch=jenkins 		#Dt branch to use for build
+dt_clone_location=device/xiaomi/mido
 
-kt=https://github.com/DerpFest-Devices/kernel_xiaomi_sm6150.git
-kt_branch=ten 			#Kernel branch to use for build
-kt_clone_location=kernel/xiaomi/sm6150
+kt=https://github.com/Apon77/corvus_working_kernel.git
+kt_branch=jenkins 		#Kernel branch to use for build
+kt_clone_location=kernel/xiaomi/mido
 
-vt=https://gitlab.com/ShivamKumar2002/vendor_xiaomi_violet.git
-vt_branch=ten			#Vendor branch to use for build
-vt_clone_location=vendor/xiaomi/violet
+vt=https://github.com/Apon77/corvus_working_vendor.git
+vt_branch=jenkins		#Vendor branch to use for build
+vt_clone_location=vendor/xiaomi/
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=clean			#none/installclean/clean
+make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
@@ -113,10 +113,5 @@ fi
 if [ "$make_type" == "installclean" ]
 then
   make installclean
-  make -j$(nproc --all) corvus
-fi
-if [ "$make_type" == "clean" ]
-then
-  make clean
   make -j$(nproc --all) corvus
 fi
