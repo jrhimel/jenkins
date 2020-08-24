@@ -18,7 +18,7 @@ vt_branch=ten-4.9		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
-lunch_or_brunch=lunch 		#lunch/brunch
+lunch_or_brunch=brunch 		#lunch/brunch
 make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
