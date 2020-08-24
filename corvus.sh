@@ -9,7 +9,7 @@ dt=https://github.com/jrhimel/new.git
 dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
-kt=https://github.com/jrhimel/viper-kernel.git
+kt=https://github.com/Dhruvgera/RockstarKernel_r4x.git
 kt_branch=master 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
