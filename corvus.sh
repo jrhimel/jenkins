@@ -13,8 +13,8 @@ kt=https://github.com/Dhruvgera/RockstarKernel_r4x.git
 kt_branch=master 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/n-v.git
-vt_branch=ten-4.9		#Vendor branch to use for build
+vt=https://github.com/jrhimel/vendor_santoni_new.git
+vt_branch=quartz		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
