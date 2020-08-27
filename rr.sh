@@ -49,20 +49,20 @@ else
 fi
 
 
-#Removed problematic existing kernel dirs
+#Remove problematic existing kernel dirs
 rm -rf kernel/realme/sm6150
 rm -rf kernel/xiaomi/sm6150
 
 
 
-#Clone dt,kt,vt(fetch & checkout to variable branch if already folder exists)
+#Clone dt,kt,vt(fetch & force checkout to variable branch if already folder exists)
 
 if [ -d "$dt_clone_location" ]
 then
     cd $dt_clone_location
     git remote add jenkins_temp $dt
     git fetch jenkins_temp
-    git checkout jenkins_temp/$dt_branch
+    git checkout -f jenkins_temp/$dt_branch
     git remote remove jenkins_temp
     cd $rom_dir
 else
@@ -74,7 +74,7 @@ then
     cd $kt_clone_location
     git remote add jenkins_temp $kt
     git fetch jenkins_temp
-    git checkout jenkins_temp/$kt_branch
+    git checkout -f jenkins_temp/$kt_branch
     git remote remove jenkins_temp
     cd $rom_dir
 else
@@ -86,7 +86,7 @@ then
     cd $vt_clone_location
     git remote add jenkins_temp $vt
     git fetch jenkins_temp
-    git checkout jenkins_temp/$vt_branch
+    git checkout -f jenkins_temp/$vt_branch
     git remote remove jenkins_temp
     cd $rom_dir
 else
