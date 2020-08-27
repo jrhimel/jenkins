@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #Variables for device (Edit according to your choices)
-trigger_no=2
+trigger_no=1
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/rebase.git
+dt=https://github.com/jrhimel/new.git
 dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
