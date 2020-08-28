@@ -6,7 +6,7 @@ device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
 dt=https://github.com/jrhimel/test_rr.git
-dt_branch=Q 		#Dt branch to use for build
+dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
 kt=https://github.com/zeta96/L_check_msm-4.9.git
