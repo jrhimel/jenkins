@@ -5,8 +5,8 @@ trigger_no=2
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/test_rr.git
-dt_branch=10 		#Dt branch to use for build
+dt=https://github.com/jrhimel/new.git
+dt_branch=rr-4.9 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
 kt=https://github.com/zeta96/L_check_msm-4.9.git
@@ -17,7 +17,7 @@ vt=https://github.com/Bikram557/android_vendor_xiaomi_santoni.git
 vt_branch=ten		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
-gapps_or_vanilla=gapps	#gapps/vanilla
+gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
 make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
