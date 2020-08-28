@@ -1,23 +1,23 @@
 #!/bin/bash
 
 #Variables for device (Edit according to your choices)
-trigger_no=2
+trigger_no=1
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/rebase.git
+dt=https://github.com/jrhimel/test_rr.git
 dt_branch=Q 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
-kt=https://github.com/Dhruvgera/RockstarKernel_r4x.git
-kt_branch=master 		#Kernel branch to use for build
+kt=https://github.com/zeta96/L_check_msm-4.9.git
+kt_branch=wip		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/rr-vendor.git
+vt=https://github.com/Bikram557/android_vendor_xiaomi_santoni.git
 vt_branch=ten		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
-gapps_or_vanilla=vanilla	#gapps/vanilla
+gapps_or_vanilla=gapps	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
 make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
