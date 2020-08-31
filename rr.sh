@@ -5,7 +5,7 @@ trigger_no=2
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/rr10.git
+dt=https://github.com/jrhimel/rebase.git
 dt_branch=Q		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
@@ -19,7 +19,7 @@ vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=installclean			#none/installclean
+make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
