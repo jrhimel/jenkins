@@ -13,8 +13,8 @@ kt=https://github.com/Bikram557/android_kernel_xiaomi_santoni_msm4.9.git
 kt_branch=ten	#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/bv.git
-vt_branch=xq		#Vendor branch to use for build
+vt=https://github.com/jrhimel/RRV.git
+vt_branch=10		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
