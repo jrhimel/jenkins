@@ -5,7 +5,7 @@ trigger_no=2
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/new.git
+dt=https://github.com/jrhimel/device-test-rr.git
 dt_branch=rr-4.9		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
@@ -13,8 +13,8 @@ kt=https://github.com/jrhimel/viper-kernel.git
 kt_branch=master		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/n-v.git
-vt_branch=ten-4.9		#Vendor branch to use for build
+vt=https://github.com/jrhimel/vendor-RR.git
+vt_branch=Q		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
