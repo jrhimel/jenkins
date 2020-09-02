@@ -5,8 +5,8 @@ trigger_no=2
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/new.git
-dt_branch=ten-4.9		#Dt branch to use for build
+dt=https://github.com/jrhimel/rebase.git
+dt_branch=Q		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
 kt=https://github.com/Bikram557/android_kernel_xiaomi_santoni_msm4.9.git
