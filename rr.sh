@@ -5,16 +5,16 @@ trigger_no=1
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/RRD.git
-dt_branch=xq		#Dt branch to use for build
+dt=https://github.com/jrhimel/rebase.git
+dt_branch=Q		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
 kt=https://github.com/Bikram557/android_kernel_xiaomi_santoni_msm4.9.git
 kt_branch=ten	#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/vendor-corvus.git
-vt_branch=du		#Vendor branch to use for build
+vt=https://github.com/jrhimel/RRV.git
+vt_branch=10		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
