@@ -9,8 +9,8 @@ dt=https://github.com/jrhimel/rebase.git
 dt_branch=Q		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
-kt=https://github.com/MrArtemSid/GameOver.git
-kt_branch=staging	#Kernel branch to use for build
+kt=https://github.com/Dhruvgera/RockstarKernel_r4x.git
+kt_branch=master	#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
 vt=https://github.com/jrhimel/Ressurection-Vendor.git
