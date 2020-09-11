@@ -9,8 +9,8 @@ dt=https://github.com/jrhimel/new.git
 dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
-kt=https://github.com/zeta96/L_check_msm-4.9.git
-kt_branch=wip 		#Kernel branch to use for build
+kt=https://github.com/Bikram557/android_kernel_xiaomi_santoni_msm4.9.git
+kt_branch=ten 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
 vt=https://github.com/Bikram557/android_vendor_xiaomi_santoni.git
