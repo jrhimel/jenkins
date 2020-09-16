@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables for device (Edit according to your choices)
-trigger_no=2
+trigger_no=1
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
