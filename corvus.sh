@@ -5,21 +5,21 @@ trigger_no=1
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
-dt=https://github.com/jrhimel/2020.git
-dt_branch=corvus 		#Dt branch to use for build
+dt=https://github.com/jrhimel/rebase.git
+dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
-kt=https://github.com/Bikram557/android_kernel_xiaomi_santoni_msm4.9.git
-kt_branch=ten 		#Kernel branch to use for build
+kt=https://github.com/zeta96/L_check_msm-4.9.git
+kt_branch=wip 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/Bikram557/android_vendor_xiaomi_santoni.git
-vt_branch=ten		#Vendor branch to use for build
+vt=https://github.com/jrhimel/vendor-corvus.git
+vt_branch=du		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=none			#none/installclean
+make_type=installclean			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
