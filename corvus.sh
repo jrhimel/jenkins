@@ -13,13 +13,13 @@ kt=https://github.com/Bikram557/android_kernel_xiaomi_santoni_msm4.9.git
 kt_branch=ten 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/vendor-corvus.git
-vt_branch=du		#Vendor branch to use for build
+vt=https://github.com/Bikram557/android_vendor_xiaomi_santoni.git
+vt_branch=ten		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=installclean			#none/installclean
+make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
