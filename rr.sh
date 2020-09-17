@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables for device (Edit according to your choices)
-trigger_no=1
+trigger_no=2
 device=santoni 			#For which device want to build
 variant=userdebug 		#user/userdebug/eng
 
@@ -19,7 +19,7 @@ vt_clone_location=vendor/xiaomi
 
 gapps_or_vanilla=vanilla	#gapps/vanilla
 lunch_or_brunch=lunch 		#lunch/brunch
-make_type=installclean			#none/installclean
+make_type=none			#none/installclean
 timezone=Asia/Dhaka		#Select which timezone you live :D
 
 
