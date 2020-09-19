@@ -10,10 +10,10 @@ dt_branch=10 		#Dt branch to use for build
 dt_clone_location=device/xiaomi/santoni
 
 kt=https://github.com/zeta96/L_check_msm-4.9.git
-kt_branch=wip 		#Kernel branch to use for build
+kt_branch=c3.5 		#Kernel branch to use for build
 kt_clone_location=kernel/xiaomi/msm8937
 
-vt=https://github.com/jrhimel/vendor-corvus.git
+vt=https://github.com/jrhimel/Vendor-Corvus.git
 vt_branch=du		#Vendor branch to use for build
 vt_clone_location=vendor/xiaomi
 
